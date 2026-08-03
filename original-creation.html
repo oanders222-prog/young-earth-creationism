@@ -4,8 +4,177 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Original Creation | Young Earth Creationism</title>
-  <meta name="description" content="How God created the world very good, without evil, corruption, or death." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Resources on God's original creation as very good, before the entrance of evil and death." />
+  <style>
+    :root {
+      --forest: #2d5a46;
+      --forest-dark: #213f32;
+      --paper: #f8f5ee;
+      --ink: #1b1b1b;
+      --muted: #5f635f;
+      --line: #ddd8cc;
+      --card: #ffffff;
+      --accent: #8a6a2f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 28px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .brand {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: .01em;
+    }
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: .98rem;
+    }
+    .main-nav a {
+      color: var(--forest-dark);
+      font-weight: 600;
+    }
+    .main-nav a.current {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+    .page-hero {
+      position: relative;
+      min-height: 390px;
+      background:
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,.55), transparent 34%),
+        linear-gradient(135deg, #f5ead0 0%, #d7bf7e 46%, #5d7a58 100%);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.18), rgba(0,0,0,.04) 55%, rgba(0,0,0,.12)),
+        repeating-linear-gradient(0deg, rgba(255,255,255,.05), rgba(255,255,255,.05) 1px, transparent 1px, transparent 4px);
+      pointer-events: none;
+    }
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
+      color: #fff;
+      padding: 64px 0;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .82rem;
+      color: #fff8df;
+      text-shadow: 0 2px 12px rgba(0,0,0,.22);
+    }
+    .page-title {
+      margin: 0 0 18px;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      text-shadow: 0 2px 18px rgba(0,0,0,.28);
+      max-width: 700px;
+    }
+    .scripture-quote {
+      max-width: 840px;
+      padding: 28px 32px;
+      border-left: 6px solid rgba(255,255,255,.82);
+      background: rgba(255,255,255,.16);
+      box-shadow: 0 18px 46px rgba(0,0,0,.13);
+      backdrop-filter: blur(2px);
+    }
+    .scripture-quote p {
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2.25rem);
+      line-height: 1.22;
+      text-shadow: 0 2px 14px rgba(0,0,0,.25);
+    }
+    .scripture-quote cite {
+      display: block;
+      margin-top: 14px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: .98rem;
+      font-style: normal;
+      letter-spacing: .04em;
+      color: #fff8df;
+    }
+    .page-content {
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 52px 0 72px;
+    }
+    .editable-box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 12px 34px rgba(0,0,0,.05);
+      padding: 34px;
+    }
+    .editable-box h2 {
+      margin: 0 0 14px;
+      font-size: 2rem;
+      color: var(--forest-dark);
+    }
+    .editable-box p {
+      margin: 0 0 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 1.05rem;
+      color: #2d2d2d;
+    }
+    .placeholder-note {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: #fffaf0;
+      border-radius: 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #4f4635;
+    }
+    .footer {
+      padding: 26px 24px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fff;
+    }
+    @media (max-width: 980px) {
+      .site-header { align-items: flex-start; flex-direction: column; }
+      .main-nav { gap: 12px 16px; }
+    }
+    @media (max-width: 700px) {
+      .page-hero { min-height: 340px; }
+      .editable-box { padding: 24px; }
+      .scripture-quote { padding: 22px 24px; }
+      .page-content, .page-hero-inner { width: min(100% - 32px, 1100px); }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -14,7 +183,7 @@
       <a href="index.html">Main Screen</a>
       <a href="dating-mechanisms.html">Dating Mechanisms</a>
       <a href="eternity.html">Eternity</a>
-      <a href="original-creation.html">Original Creation</a>
+      <a href="original-creation.html" class="current">Original Creation</a>
       <a href="evil.html">Evil</a>
       <a href="geology.html">Geology</a>
       <a href="biology.html">Biology</a>
@@ -23,23 +192,30 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
     <section class="page-hero">
       <div class="page-hero-inner">
         <p class="eyebrow">Young Earth Creationism</p>
         <h1 class="page-title">Original Creation</h1>
-        <p>How God created the world very good, without evil, corruption, or death.</p>
+        <div class="scripture-quote" aria-label="Genesis quotation">
+          <p>“And God saw every thing that he had made, and, behold, it was very good.”</p>
+          <cite>Genesis 1:31</cite>
+        </div>
       </div>
     </section>
+
     <section class="page-content">
       <div class="editable-box">
-        <h2>Original Creation</h2>
-        <p>This page is about the original creation: God created the heavens and the earth, and what He made was very good. Evil was not part of the world as God created it. The created order came from God’s wisdom, power, and goodness.</p>
-        <p>Use this page to develop philosophical, theological, and Biblical arguments about creation as originally good, ordered, meaningful, and free from evil. This section can include notes on Genesis 1, creation ex nihilo, the goodness of matter, the image of God, and the difference between creation as God made it and creation as later corrupted by sin.</p>
+        <h2>Very Good Creation</h2>
+        <p>This page will address the Biblical teaching that God created the world very good. The original creation was not marked by death, decay, violence, or corruption, but by order, fruitfulness, beauty, and peace.</p>
+        <p>Here you can gather resources on Genesis 1–2, the goodness of creation, the created order, and the contrast between the original world and the world after the fall.</p>
+        <p>Use this page to collect articles, Scriptures, arguments, and resources on the goodness of God’s creation and the harmony of the world as it first came from His hand.</p>
       </div>
-      <div class="placeholder-note">Edit this page by opening <strong>original-creation.html</strong> in GitHub or your code editor and replacing this starter text with your article, resources, links, videos, or notes.</div>
+      <div class="placeholder-note">Edit this page by opening <strong>original-creation.html</strong> in GitHub or your code editor and replacing this starter text with your own article, links, resources, or notes.</div>
     </section>
   </main>
+
   <footer class="footer">© <span id="year"></span> YoungEarthCreationism.com</footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
